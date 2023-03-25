@@ -23,8 +23,10 @@ void	renderer_render_showstat(int n_samples)
 	static int			i;
 	static const char	*blinker[3] = {".     ", "..    ", "...   "};
 
-	ft_printf("\rSample count %d ", n_samples);
-	ft_printf("%s", blinker[(i++) % (sizeof(blinker) / sizeof(char *))]);
+	printf("\rSample count %d ", n_samples);
+	fflush(stdout);
+	printf("%s", blinker[(i++) % (sizeof(blinker) / sizeof(char *))]);
+	fflush(stdout);
 }
 
 void	renderer_render_showstat_multithread(int n_samples, int worker_idx)
@@ -32,8 +34,10 @@ void	renderer_render_showstat_multithread(int n_samples, int worker_idx)
 	static int			i;
 	static const char	*blinker[3] = {".     ", "..    ", "...   "};
 
-	ft_printf("\rWorker %d Sample count %d ", worker_idx, n_samples);
-	ft_printf("%s", blinker[(i++) % (sizeof(blinker) / sizeof(char *))]);
+	printf("\rWorker %d Sample count %d ", worker_idx, n_samples);
+	fflush(stdout);
+	printf("%s", blinker[(i++) % (sizeof(blinker) / sizeof(char *))]);
+	fflush(stdout);
 }
 
 int	get_next_milestone(t_renderer *renderer, int current_milestone)
