@@ -16,3 +16,6 @@ My first RayTracer with miniLibX
 - objecs: sphere, plane, cylinder, cone, box
 - materials: lambertian, dielectric, metal
 - texture: solid, checker, image(with xpm file)
+
+You can create your own scene with this ray tracer.  
+If you want, all you need to do is follow the .rt file rules.
