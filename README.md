@@ -13,8 +13,8 @@ My first RayTracer with miniLibX
 ![img4](./images/final2.jpg)
 - final scene2 
 ## What we can do with this ray tracer
-- objecs: sphere, plane, cylinder, cone, box
-- materials: lambertian, dielectric, metal
+- object: sphere, plane, cylinder, cone, box
+- material: lambertian, dielectric, metal
 - texture: solid, checker, image(with xpm file)
 
 You can create your own scene with this ray tracer.  
